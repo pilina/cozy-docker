@@ -1,0 +1,29 @@
+host: 127.0.0.1
+port: 8080
+
+admin:
+  host: 127.0.0.1
+  port: 6060
+
+couchdb:
+  url:
+
+fs:
+  url: file:///var/lib/cozy
+
+vault:
+  credentials_encryptor_key: /etc/cozy/vault.enc
+  credentials_decryptor_key: /etc/cozy/vault.dec
+
+konnectors:
+  cmd: /usr/share/cozy/konnector-node16-run.sh
+
+log:
+  level: info
+  syslog: false
+
+registries:
+  default:
+    - https://apps-registry.cozycloud.cc/selfhosted
+    - https://apps-registry.cozycloud.cc/banks
+    - https://apps-registry.cozycloud.cc/
